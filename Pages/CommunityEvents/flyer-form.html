@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Sumbit a Flyer for the Board</title>
+        <link rel="stylesheet"  type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+
+        <link rel="stylesheet" href="flyer-form.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="flyer-form.js"></script>
+        <style>
+         #init-buttons {
+             margin-top: 24vh;
+             background-color: white;
+             border-radius: 25px;
+             width: 60%;
+             padding: 50px;
+             margin-left: 15%;
+         }
+
+         #init-buttons > button{
+             width: 200px;
+         }
+        </style>
+    </head>
+
+    <body>
+        
+
+
+        <form id="upload-words">
+            <h2 id="">Add Your Local Event Flyer</h2>
+            <div class="question">
+                <input type="text" name="title" required />
+                <label>Event Name</label>
+            </div>
+
+            <div class="question">
+                <?php wp_editor("", "description") ?>
+            </div>
+            <center>
+                <button class="button-med-green">Submit</button>
+            </center>
+            </div>
+        </form>
+
+
+
+    </body>
+
+</html>
