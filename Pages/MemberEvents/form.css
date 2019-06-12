@@ -1,0 +1,113 @@
+
+.eventspage-form {
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+
+.eventspage-form  textarea {
+      resize: none;
+}
+
+.eventspage-form  h1 {
+    font-weight: 300;
+}
+
+.eventspage-form .form-buttons
+{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em 0 0 0;
+}
+.eventspage-form .form-buttons button {
+    margin-left: 16px;
+}
+
+.eventspage-form .form-field {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+.eventpage-form .form-field:last-child {
+    margin-bottom: 0;
+}
+.eventpage-form  .form-field .icon {
+    align-self: center;
+    fill: #2980b9;
+    padding: .5em .5em;
+}
+.eventspage-form  .form-field label {
+    align-self: center;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .eventspage-form  .form-field label {
+      flex-basis: 80px;
+      width: 80px;
+    }
+}
+
+.eventspage-form  .form-field > section {
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    display: flex;
+    flex: 1;
+}
+
+.eventspage-form .form-field > section input {
+    border: 0;
+    border-left: 1px solid #ccc;
+    flex-grow: 1;
+    font-size: 1.1rem;
+    font-weight: 300;
+    padding: .35em .5em;
+  }
+.eventspage-form  .icon {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    fill: currentColor;
+  }
+
+.eventspage-form  .a-btn, .a-btn--filled {
+    padding: .35em 1em;
+    box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    border: 1px solid #3498db;
+    background-color: #fff;
+    transition: all 146ms ease;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    color: #3498db;
+  }
+.eventspage-form  .a-btn:enabled:hover, .a-btn--filled:enabled:hover {
+    background-color: #3498db;
+    color: #fff;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
+  }
+.eventspage-form  .a-btn--filled {
+    background-color: #3498db;
+    border-color: #3498db;
+    color: #fff;
+  }
+.eventspage-form  .a-btn--filled:enabled:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+  }
+.eventspage-form  .a-btn:disabled, .a-btn--filled:disabled {
+    background-color: #ecf0f1;
+    border-color: #bdc3c7;
+    color: #6a6a6a;
+}
+  
+  /* add a red asterisk after required labels 
+   without having to include it in the markup */
+.eventspage-form  .label--required:after {
+    content: '*';
+    color: red;
+    margin-left: 5px;
+}
+
+
