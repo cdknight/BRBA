@@ -1,0 +1,80 @@
+/* Header */
+
+#TabBar {
+    background-color: #78CB95;
+    font-size: 1.2em;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    height: 80px;
+    text-align: right;
+    color: white;
+    z-index: 999;
+}
+
+#TabBar a {
+    color: white;
+    text-decoration: none;
+}
+
+#TabBar li {
+    display: inline;
+    padding: 1em;
+    position: relative;
+    top: .5em;
+    right: 1.5em;
+}
+
+#TabBar > li:hover {
+    color: #006B34;
+    cursor: pointer;
+}
+
+#TabBar #logo {
+    height: 3em;
+    width: 5em;
+    position: fixed;
+    left: 1em;
+    top: .3em;
+}
+
+#TabBar #login {
+    height: 1.19em;
+    width: 1.1em;
+    position: fixed;
+    right: 1.3em;
+    top: 1.45em;
+}
+/* End Header */
+
+/* Start buttons */
+
+.button-small-green {
+    background-color: #006B34;
+    border-radius: 25px;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-style: none;
+    transition: background-color 0.2s;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-small-green:hover {
+    background-color: #69B578;
+}
+
+.button-small-green:active {
+    background-color: #99D5C9;
+}
+
+.button-small-green:focus {
+    outline: #0D1F22;
+}
+
+/* End buttons */
+
